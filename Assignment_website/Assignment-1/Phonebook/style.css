@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+     width: 38vw;
+    background-color: black;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 52px;
+ 
+   
+}
+article{
+    width: 40vw;
+    overflow-y: scroll;
+    
+   
+}
+
+h1{
+    color: white;
+    font-size:30px;
+    padding-top: 50px;
+    padding-left :190px; 
+     
+}
+
+#tellogo{
+    color: goldenrod;
+   
+}
+
+
+
+ div{
+ 
+    width: 80%;
+    margin-top:50px;
+    margin-left: 70px;
+    padding-left: 2px;
+    border-bottom:0.1px solid rgb(59, 59, 59);
+    color: white;
+    font-size: 20px;
+    background-color: solid black;
+}
+ul li{
+  
+    width: 65%;
+    height: 25px;
+    font-size: 15px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-left: 75px;
+    padding-left: 20px;
+    background-color: #909090;
+    border-radius: 15px;
+    list-style: none;
+    color:white
+
+}
+
+
+div:hover{
+   
+    font-size: 30px;
+    color: white;
+    
+}
+ul li:hover{
+    color:maroon;
+    font-size: 28px;
+    padding-bottom: 15px;
+    height: 30PX ;
+} 
+
+#div{
+    position: sticky;
+    height: 30px;
+    top: 0px;
+   background:black;
+}
+ 
+
+ 

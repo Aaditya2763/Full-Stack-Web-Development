@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    background-color: rgb(34, 31, 34);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+#sitename{
+    color: white;
+    font-size: 50px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+li{
+    color:white;
+    font-size: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+a:hover{
+    color: orangered;
+}
+
+
+
+@media screen and (max-width:600px){
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+}

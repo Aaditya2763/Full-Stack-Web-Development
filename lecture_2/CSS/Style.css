@@ -1,0 +1,56 @@
+header{
+    border: 5px solid maroon;
+    border-radius: 20px;
+    width: 800px;
+    height: 200px;
+    
+  
+}
+#logo{
+border: 5px solid grey;
+width:70px;
+
+
+}
+nav{
+   font-size: 30px;
+   color: brown;  
+}
+video{
+    width: 200px;
+    
+}
+
+h1{
+    color: maroon;
+    
+}
+aside{
+    border: 5px SOLID gray;
+    border-radius: 10px;
+}
+h3{
+    color: maroon;   
+}
+ul{
+    color:green;
+}
+main{
+    border: 5px solid maroon;
+    border-radius: 20px;
+    
+}
+div{
+    border: 5px SOLID gray;
+    border-radius: 10px;
+}
+
+article{
+    border: 5px SOLID gray;
+    border-radius: 10px;
+}
+p{
+    color: green
+    ;
+    font-size: 20px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form in html</h1>
+    <form action="#" method="get">
+    <fieldset>
+        <legend>Credentials</legend>
+        <div>
+        <label for="username"> Username</label>
+        <input type="text" id="username" placeholder="Username" name="Username "required> <br><br>
+       </div>
+       <div>
+  
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" maxlength="10" minlength="5" required>
+        <input type="color">
+        <br>
+        <br>
+       </div>
+       <fieldset>
+           <legend>Collage_ details</legend>
+           <div>
+               <label for="collage">Collage Name</label>
+               <input type="text" id="collage" name="collage" placeholder="Collage Name"> <br><br>
+               
+               <label for="country">Are you a citizen of india</label> &nbsp;&nbsp;&nbsp;
+               Yes
+               <input type="radio" name="country" id="country">
+               No
+               <input type="radio" name="country" id="country"><br><br>
+
+               <label for="stream">choose your stream</label>
+               <select name="Stream" id="stream">
+                   <option value="select stream" selected>select your stream</option>
+                   <option value="B.A">BA</option>
+                   <option value="bca" >BCA</option>
+                   <option value="mca">MCA</option>
+                   <option value="Btech">B.TECH</option>
+                   <option value="Bcom">BCOM</option>
+                   <option value="mtech">MTECH</option>
+               </select>
+           </div>
+       </fieldset>
+
+
+        <button type="submit">Submit</button>
+
+
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* Universal selector*/
+
+/*    *{
+       border: 2px solid maroon;
+       } 
+*/
+
+/* ID selector */
+
+/* 
+      #Special{
+       color: maroon;
+        }
+ */
+
+/* Element selector  */
+
+/* 
+      h1{
+      color: maroon;
+       }
+ */
+
+ /*  class selector */
+
+  /* .movie{
+      color: maroon;
+  } */
+
+  /* Attribute selector */
+
+  input[type="text"]{
+      background-color: blue;
+     
+  }

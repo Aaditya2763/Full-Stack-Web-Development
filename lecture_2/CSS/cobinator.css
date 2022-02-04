@@ -1,0 +1,29 @@
+/* Decendents combinators */
+
+article strong{
+    color: maroon;
+}
+
+ul li{
+    color: maroon;
+}
+
+/*  child combinator */
+
+ul>li{
+    color: green ;
+    border: 2px solid maroon;
+   
+}
+
+/*  Adjacent combinator */
+
+h4+p{
+     color: maroon;
+}
+
+/*  general Siblings */
+
+h3~P{
+   text-decoration: line-through    ;
+}

@@ -1,0 +1,16 @@
+div{
+    border: 5px solid maroon;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+ #static #middle{
+    position:static;
+    width: 150px;
+    height: 150px;
+    bottom: 700px;
+    left: 00px;
+}
+#Sticky #middle{
+    position: sticky;
+}

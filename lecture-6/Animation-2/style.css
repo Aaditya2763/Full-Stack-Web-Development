@@ -1,0 +1,55 @@
+section{
+    width: 40vw;
+    height: 520px;
+    /* border: 2px solid black; */
+    margin-left: 500px;
+    background-color:white;
+    border-radius: 10px;
+   text-align: center;
+    margin-left: 400px;
+   
+    animation-name: gravity;
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in;
+
+  
+   
+}
+    
+
+h1{
+        margin:20px auto;
+        text-align: center;
+        text-decoration: underline;
+        color:maroon;
+        font-size: 40px;
+    }
+
+img{
+    width:100px;
+    height:100px;
+    padding-top: 10px;
+    border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes gravity{
+    100%{
+        transform: translateY(428px);
+    }
+}
+
+@keyframes rotate{
+
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

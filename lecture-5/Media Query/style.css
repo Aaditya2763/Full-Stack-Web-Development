@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 90vw;
+    height:100%;
+    margin: 30px auto;
+    border: 5px solid maroon;
+    border-radius: 20px;
+
+    display: flexbox;
+  
+}
+section{
+    width: 80vw;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 20px auto;
+    
+}
+h1{
+    color: maroon;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+p{
+    padding:10px 10px 10px 10px;
+    color: blue;
+}
+
+@media screen and (width:1080px) {
+    h1{
+        color: blue;
+    }
+    
+}
+@media screen and (max-width:748px) {
+    h1{
+        color: chartreuse;
+        font-size: 4rem;
+    }
+    section{
+        background-color: darkgray;
+    }
+    
+}
+@media screen and (orientaion:portrait){
+    section{
+        background-color: rgb(226, 185, 23);
+    }
+}

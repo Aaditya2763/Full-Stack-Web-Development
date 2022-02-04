@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+        margin:20px auto;
+        text-align: center;
+        text-decoration: underline;
+        color:maroon;
+        font-size: 40px;
+    
+}
+.container{
+
+    display: grid;
+    margin: 10px auto;
+    width: 80vw;
+   
+    background-color: rgb(199, 126, 199);
+    border: 3px solid rgb(3, 0, 0);
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 5px;
+    column-gap:5px;
+
+    grid-template-areas: 
+    "navbar navbar navbar navbar"
+    "aside main main main"
+    "aside section section section"
+    "footer footer footer footer "
+    ;
+}
+
+.item_a{
+    grid-area:navbar;
+    height: 30px;
+ 
+
+}
+.item_b{
+     grid-area: aside;
+    height:81vh;
+}
+
+.item_c{
+    grid-area:main;
+    height:40vh;
+}
+
+
+.item_d{
+    grid-area:section;
+    height:40vh;
+}
+
+.item_e{
+    grid-area:footer;
+    height:20vh;
+}
+
+@media screen and (max-width:600px){
+.container{
+    grid-template-areas:
+    "navbar navbar navbar navbar"
+    "aside aside aside aside"
+    "main main main main"
+    "section section section section"
+    "footer footer footer footer";
+}
+}

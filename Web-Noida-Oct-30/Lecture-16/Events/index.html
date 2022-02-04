@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 5px solid black;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Inline Events -->
+    <h1 onclick="alert('Someone Clicked Me!!');console.log('You Clicked Me')">Events</h1>
+
+
+    <p id="first-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, obcaecati porro itaque veniam excepturi saepe consequatur quos quibusdam explicabo omnis error unde dolor quia ut incidunt voluptatum. Nostrum, quis aut!
+    Modi cum atque sit repellendus dolorem expedita, voluptatum quam maiores. Numquam dolore quas a sequi consequuntur sapiente earum provident ipsam corporis eaque totam eos, ullam cupiditate voluptas dolores, laudantium quae?
+    Non qui exercitationem doloremque quidem laborum nobis nihil ullam, omnis repudiandae. Recusandae, distinctio qui. Molestias dicta alias voluptas, quia ducimus iusto vitae explicabo excepturi impedit facere rerum, corporis autem quod.
+    Dolorem omnis voluptatibus corrupti ipsa ut nostrum consequuntur consequatur debitis velit! Quis accusamus, earum quasi nisi ducimus dicta debitis laborum eum doloremque assumenda nihil autem minima incidunt, veniam repellat tempora?
+    Officiis, doloribus. Quibusdam, aliquam ullam sed explicabo officiis consectetur tempore in ea! Consectetur fuga, nobis neque voluptatem laudantium vero iste veritatis quibusdam corrupti, laboriosam earum enim! Quibusdam omnis ipsa laborum.</p>
+
+    <h2>Add Tweets</h2>
+    <form id="form">
+        <fieldset>
+            <label for="username">Username</label>
+            <input type="text" placeholder="username" id="username">
+            <label for="tweet">Tweet</label>
+            <input type="text" placeholder="Tweet" id="tweet">
+            <button type="submit">Create Tweet</button>
+        </fieldset>
+    </form>
+
+    <ul id="tweets-list"></ul>
+
+    <button id="btn">Click Me</button>
+    <br>
+    <br>
+    <br>
+    <input type="text" placeholder="Search">
+    <br>
+    <br>
+    <br>
+
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

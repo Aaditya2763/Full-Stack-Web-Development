@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+Header{
+    position: fixed;
+    background-color: blue;
+width: 98.5%;
+height: 35px;
+margin-left: 10px;
+margin-top: 0px;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+    padding-top:5px;
+   
+
+}
+li:hover{
+    color: red;
+}
+#Signup{
+    position: absolute;
+    right: 50px;
+}
+p{
+ 
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+main{
+    
+    margin-right:10px ;
+   margin-left:10px ;
+   margin-bottom: 10px;
+   padding-left: 10px; 
+   padding-top: 35px;
+  margin-top: 20px;
+   font-family: poppins;
+    border: 5px solid maroon;
+}
+div h1{
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 40%;
+    text-decoration: 5px underline solid maroon;
+
+    }

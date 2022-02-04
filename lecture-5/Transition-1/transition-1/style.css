@@ -1,0 +1,23 @@
+h1{
+    text-decoration: underline;
+    color:maroon;
+    font-size: 50px;
+    text-align: center;
+}
+div{
+    background-color: cyan;
+    width: 80vw;
+    height: 50vh;
+  margin:50px auto;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+div:hover{
+    border-radius: 50%;
+    background-color: darkgoldenrod;
+}
+div{
+    transition:all;
+    transition-duration:2s;
+    transition-delay:0.5s;
+}

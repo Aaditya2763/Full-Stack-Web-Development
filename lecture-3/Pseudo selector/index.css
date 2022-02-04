@@ -1,0 +1,105 @@
+ section{
+    width: 1000px;
+    height: 750px;
+    border: 5px solid maroon;
+    margin: 50px 180px;
+    background-color: navajowhite;
+    border-radius: 20px;
+ }
+ section section{
+    width: 800px;
+    height: 310px;
+    border: 5px solid blue;
+    margin: 50px  100px 100px 100px;
+    background-color:bisque;
+    border-radius: 20px;
+ }
+ div{
+    width: 800px;
+    height: 30px;
+    border: 5px solid brown;
+    padding-top: 10px;
+    padding-bottom:3px ;
+    margin-left: 100px;
+    border-radius: 20px;
+
+ }
+ #link{
+     text-align: center;
+     margin-top: 0px;
+ }
+ a:active{
+     color: black;
+ }
+ a:hover{
+     color:red;
+ }
+ 
+ 
+ h1::first-letter{
+     font-size: 70px;
+     color: blue;
+   
+   
+ }
+ h1{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: 5px underline;
+ }
+ 
+ section p{
+     font-size: 25px;
+     color: maroon;
+     background: lightyellow;
+ }
+ button:active{
+color: green;
+ }
+ button{
+     background: lightsteelblue;
+ }
+ section p:nth-of-type(1){
+     color: red;
+ }
+ section p:last-child{
+     color: green;
+ }
+ section p:nth-of-type(1)::first-letter{
+     font-size: 50px;
+     color: blue;
+ }
+ li::before{
+     content:"\260E ";
+ }
+ button:hover{
+     color: red;
+ }
+ a{
+     text-decoration: none;
+     
+ }
+ ul{
+     list-style: none;
+     margin-left: 70px;
+     font-size: 18px;
+ }
+    a[href$='.com']{
+     color: red;
+ } 
+ 
+ a[href*='facebook']{
+     color:red;
+ }
+
+ a[href^='www']{
+     color:red;
+ }
+ #href{
+     height:100px;
+     width:1000px;
+     margin-left: 180px;
+     text-align: center;
+     color: blue;
+     background: honeydew;
+ }

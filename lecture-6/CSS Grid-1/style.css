@@ -1,0 +1,30 @@
+h1{
+    margin:20px auto;
+    text-align: center;
+    text-decoration: underline;
+    color:maroon;
+    font-size: 40px;
+}
+section{
+    display: grid;
+    width: 80vw;
+
+border: 1px solid rgb(236, 232, 232);
+background-color:rgb(233, 218, 218);
+border-radius: 10px;
+text-align: center;
+margin-left: 120px;
+grid-template-columns: repeat(3,2fr);
+
+grid-auto-rows: 60px;
+
+
+}
+section div{
+
+   width:272px;
+   height: 50px;
+  
+   
+
+}

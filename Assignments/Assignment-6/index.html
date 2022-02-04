@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/80797a3919.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <nav id="nav">
+            <ul>
+                <li class="logoName"><img src="./Assets/logo.png" alt="Spotify" id="logo">Musify</li>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </nav> 
+       <div id="container">
+           <section class="songList">
+            <h1>Most popular bollywood songs</h1> 
+                <li id="1" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover"> song1 <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="2" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover"> song2 <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="3" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover">song3 <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="4" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover"> song4 <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="5" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover"> song5 <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="6" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover">song6<button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="1" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover"> song1 <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="2" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover"> song2 <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="3" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover">song3<button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="4" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover">song4<button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="5" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover"> song5 <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="6" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover"> song6  <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="1" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover"> song1<button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="2" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover"> song2 <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+                <li id="3" class="List"><img src="./Assets/songCover.jpg" alt="songCover" class="songCover">song3 <button class="songPlayIcon"><i class="fas fa-play-circle"></i></button> </li>
+            </ul>
+           </section>
+           
+       </div>  
+      
+       <section class="playSection">  
+      <input type="range" id="playRange" min="0" max="100">
+        <ul class="icons">
+        <li><button id="repeatBtn"><i class="fas fa-redo"></i></button></li>
+        
+        <li> <button id="backwardBtn"> <i class="fas fa-step-backward"></i></button> </li>
+        <li> <button id="playBtn"> <i class="fas fa-play-circle" id="masterplay"></i></button>  </li>
+        <li> <button id="forwardBtn"> <i class="fas fa-step-forward"></i></button>  </li>
+        <li> <button id="volumeBtn"><i class="fas fa-volume-up"></i></button></li>
+        </ul>
+        </section>
+         
+          
+
+           
+      
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+margin: 10% auto;
+width:40vw;
+height: auto;
+padding: 20px;
+background: black;
+border: 2px solid grey;
+border-radius: 50px;
+}
+
+h1{
+color: white;
+text-align:center;
+padding-bottom: 20px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 2rem;
+}
+input{
+    margin-top: 10px;
+    width: 30vw;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px
+}
+button{
+    margin-left:15px;
+   
+    width: 6vw;
+    height: auto;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    background-color: skyblue;
+    
+}
+button:hover{
+    transform:translateY(-1px);
+    box-shadow:  0 0 5px 5px white;
+}
+
+ol{
+    display: flexbox;
+    align-content: space-around;
+}
+li{
+    width:30vw;
+    height: auto; 
+   font-size:1rem;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin-top: 20px;
+   padding: 5px;
+display: inline-block;
+ justify-content: space-;
+   list-style-position: inside; 
+   border-radius: 20px;
+   font-weight: bolder;
+   overflow-wrap: break-word;
+}
+li:hover{
+    transform:translateY(-2px); 
+    box-shadow: 0 0 5px 5px white;
+
+} 
+@media screen and (max-width:800px) {
+    #btn{
+        display: flexbox;
+        width:31vw;
+        height: auto;
+        text-align: center;
+        margin: 5px auto;
+        margin-left:22px ;
+        border-radius: 20px;
+    }
+    input{
+        display: inline-block;
+        margin: 5px auto;
+        margin-left:20px ;
+    }
+    li{
+        margin-left:22px ;
+        padding: 2px;
+        text-align: center;
+    }
+}
