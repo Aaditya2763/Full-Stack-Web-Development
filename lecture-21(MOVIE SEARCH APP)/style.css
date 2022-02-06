@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100vw;
+  
+    height: 50px;
+    background-color: black;
+   
+}
+h1{
+    color: white;
+    align-items: center;
+    font-size: 3rem;
+      
+    background-image: linear-gradient(to right,#EC4899, #8B5CF6);
+    -webkit-background-clip:text; 
+
+   -webkit-text-fill-color: transparent;
+}
+
+
+#logo{
+    width: 100px;
+    width: 66px;
+    border: 1px solid red;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+#search{
+    width: 70px;
+    height: 30px;
+    margin: 12px auto;
+    align-items: center;
+    border: 2px solid rgb(8, 162, 252);
+    border-radius: 5px;
+}
+
+ul li{
+  list-style: none;
+  color: white;
+  margin:5px 20px;
+  font-size: 1.5rem;
+}
+input{
+    width: 20vw;
+    height:25px;
+    margin: 10px;
+    border-radius:10px;
+    font-size: 1rem;
+    border: none;
+    padding: 5px;
+   
+}  
+input::placeholder{
+    text-align: center;
+} 
+form{
+    display: flex;
+    justify-content: space-around;
+}
+
+h2{
+     
+    margin: 20px ;
+}
+
+
+
+
+
+#resultContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    width: 80vw;
+    height: auto;
+    padding: auto ;
+    /* justify-content: space-around; */
+    background-color: rgb(240, 220, 220);
+    margin:20px auto ;
+    box-shadow: 10px 5px 5px rgb(184, 178, 178);;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:850px){
+#header{
+    width:100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+input{
+    width: 60vw;
+    height:25px;
+    margin: 10px;
+    border-radius:10px;
+    font-size: 1rem;
+}   
+input::placeholder{
+    text-align: center;
+} 
+ul li{
+    font-size: 1rem;
+}  
+}
+
+@media screen and (max-width:1000px){
+    h1{
+        font-size: 2.5rem;
+        align-items: center;
+    }
+    ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #content{
+        width: 100vw;
+    }
+    #resultContainer{
+        width: 80wv;
+        height: auto;
+    }
+   
+   input::placeholder{
+        text-align: center;
+    }   
+}  
+
+
