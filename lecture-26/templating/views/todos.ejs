@@ -1,0 +1,13 @@
+<%-include ("./partials/header")%>
+<%-include ("./partials/navBar")%>
+
+<h1>Hello my name is <%= firstName %> <%=lastName %> </h1>
+<h2>I have to complete these tasks</h2>
+<ul>
+<%for(let todo of todos){%>
+    <li>
+       <%=todo%>
+    </li>
+    <%}%>
+</ul>
+<%-include ("./partials/footer")%>
