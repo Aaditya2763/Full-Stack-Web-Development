@@ -1,0 +1,25 @@
+<%-include ('./partials/header')%>
+<%-include ('./partials/navbar')%>
+
+<h1>All comments are :-</h1>
+
+<ul style="border: 2px solid black; margin: 0px 5px;">
+    <%for(let list of comments){%>
+        <li style="border: 2px solid green; margin: 5px 5px;">
+            <h3> {Id:<%=list.id %> &nbsp  &nbsp  &nbsp    author:<%=list.author%>  &nbsp  &nbsp  &nbsp  &nbsp comment:<%=list.comment%>}</h3>
+            <a href="/comments/<%=list.id%>">Show</a>
+            <a href="/comments/<%=list.id%>/edit">Edit</a>
+            <a href="/comments/<%=list.id%>/update">Update</a>
+       <form action="/comments/<%=list.id%>?_method=DELETE" method="post">
+           <button type="submit">Delete</button>
+       </form>
+        </li>
+        
+
+    <%}%>
+</ul>
+<h3 align="center"><button><a href="/comments/new">click here to add comments</a></h3></button>
+
+
+
+<%-include ('./partials/footer')%>

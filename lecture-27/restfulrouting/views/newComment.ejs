@@ -1,0 +1,20 @@
+<%-include ('./partials/header')%>
+<%-include ('./partials/navbar')%>
+
+<h1>Creating new Comment</h1>
+<form action="/comments" method="post">
+
+    <label for="author">Author Name</label>
+    <input type="text" name="author" id="author">
+    <br>
+    <br>
+    <label for="comment">Enter your comment</label>
+    <br>
+    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    <br><br>
+    <button type="submit">Create</button>
+
+</form>
+
+
+<%-include ('./partials/footer')%>

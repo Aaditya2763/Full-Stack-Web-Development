@@ -1,0 +1,44 @@
+<%-include ('./partials/header')%>
+<%-include ('./partials/navbar')%>
+
+<h2>This is a form for testing Get and Post methods</h1>
+    <h1>Get Method</h1>
+    <form action="/user"  method="get">
+       
+        <label for="usernsme">username</label>
+        <input type="text" name="username" id="username">
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age">
+        <button type="submit">Submit</button>
+    </form>
+
+        <h1>Post Method</h1>
+
+        <form action="/user"  method="post">
+       
+            <label for="usernsme">username</label>
+            <input type="text" name="username" id="username">
+            <label for="age">Age</label>
+            <input type="text" name="age" id="age">
+            <button type="submit">Submit</button>
+        </form>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%-include ('./partials/footer')%>

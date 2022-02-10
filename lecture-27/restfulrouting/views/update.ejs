@@ -1,0 +1,20 @@
+<%-include ('./partials/header')%>
+<%-include ('./partials/navbar')%>
+
+<h1>Update comment</h1>
+<form action="/comments/<%=c.id%>?_method=PATCH"  method="post">
+
+    <label for="author">Author Name</label>
+    <input type="text" name="author" id="author" value="<%= c.author%>">;
+    <br>
+    <br>
+    <label for="comment">Enter your comment</label>
+    <br>
+    <textarea name="comment" id="comment" cols="30" rows="10"><%=c.comment%></textarea>
+    <br><br>
+    <button type="submit">Update</button>
+
+</form>
+
+
+<%-include ('./partials/footer')%>
