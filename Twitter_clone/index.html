@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter Clone</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./library/jQuery.js"></script>
     <script src="https://kit.fontawesome.com/ad2e88675a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,19 +17,19 @@
     <div id="container">
 
         <section id="navbar">
-            <ul>
+            <ul id="navList">
 
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-house-chimney"> </i>Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-hashtag"> </i>Explore</a></li>
-                <li><a href="#"><i class="fa-regular fa-bell"> </i>Notification</a></li>
-                <li><a href="#"><i class="fa-regular fa-envelope"> </i>Message</a></li>
-                <li><a href="#"><i class="fa-solid fa-bookmark"> </i>Bookmark</a></li>
-                <li><a href="#"><i class="fa-solid fa-list"></i> List</a></li>
-                <li><a href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
-                <li><i class="fa-solid fa-angles-right"></i>More</a></li>
-                <li><button type="submit" id="tweetButton">Tweet</button><br></li>
-                <li> <button id="userDetails"><i class="fa-solid fa-user"></i>Aaditya
+                <li id="Twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li id="Home"><a href="#"><i class="fa-solid fa-house-chimney"> </i>Home</a></li>
+                <li id="Explore"><a href="#"><i class="fa-solid fa-hashtag"> </i>Explore</a></li>
+                <li id="Notification"><a href="#"><i class="fa-regular fa-bell"> </i>Notification</a></li>
+                <li id="Message"><a href="#"><i class="fa-regular fa-envelope"> </i>Message</a></li>
+                <li id="Bookmark"><a href="#"><i class="fa-solid fa-bookmark"> </i>Bookmark</a></li>
+                <li id="List"><a href="#"><i class="fa-solid fa-list"></i> List</a></li>
+                <li id="Profile"><a href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+                <li id="More"><i class="fa-solid fa-angles-right"></i>More</a></li>
+                <li id="Tweet"><button type="submit" id="tweetButton">Tweet</button><br></li>
+                <li id="User"> <button id="userDetails"><i class="fa-solid fa-user"></i>Aaditya
                     <br>
                    <span> @Aaditya2763</span>
                 </button></li>
@@ -71,109 +72,27 @@
                 </ul>
               
 
-            </div>
-            <div id="postsContainer">
-                <img  src="./assets/0ZxKlEKB_400x400.jpg" alt=""  class="logo">
-                <ul>
-                    <li>NASA <span>@NASA .5h</span> </li>
-                    <li> <p>The TRAPPIST-1 system has seven Earth-size planets—and at least three are in the "habitable zone." What will <span class="link">@NASAWebb</span> find when it takes a closer look?</p></li>
-                    <li><p>Talk with experts in our next <span class="link">@TwitterSpaces</span>. Set a reminder to join & share questions using <span class="link">#AskNASA</span></p></li>
-                <li><img src="./assets/nasa_img.jfif" alt="" class="postImg"></li>
-                </ul>
-              
-
-            </div>
+             </div>
+            
 
         </section>
 
         <section id="newsSection">
             <div>
-                <input type="text" placeholder="  Search Twitter">
-                <h1>What's happening</h1>
-            </div>
+                <input type="text"  id="newsSearch" placeholder="  Search Twitter" value="technology">
+                <h1><span id="heading">What's happening</span></h1>
             
             <div id="news">
                 <ul>
-                    <li></li>
+        
                     <li> <p class="lightText">Sports.live</p></li>
                     <li><h4>INDvWI: India beat the West Indies by 8 runs in the second T20 match</h4></li>
                     <li> <p class="lightText">Trending with <span>#ViratKohli</span></p></li>
                   
                 </ul>
-                <img src="./assets/cricket-img.webp" alt="">   
+                <img src="./assets/cricket-img.webp" alt="" id="newsImg">   
 
-            </div>
-            <br><br>
-            <div id="news">
-                <ul>
-                    <li></li>
-                    <li> <p class="lightText">Sports.live</p></li>
-                    <li><h4>INDvWI: India beat the West Indies by 8 runs in the second T20 match</h4></li>
-                    <li> <p class="lightText">Trending with <span>#ViratKohli</span></p></li>
-                  
-                </ul>
-                <img src="./assets/cricket-img.webp" alt="">   
-
-            </div>
-            <br><br>
-            <div id="news">
-                <ul>
-                    <li></li>
-                    <li> <p class="lightText">Sports.live</p></li>
-                    <li><h4>INDvWI: India beat the West Indies by 8 runs in the second T20 match</h4></li>
-                    <li> <p class="lightText">Trending with <span>#ViratKohli</span></p></li>
-                  
-                </ul>
-                <img src="./assets/cricket-img.webp" alt="">   
-
-            </div>
-            <br><br>
-            <div id="news">
-                <ul>
-                    <li></li>
-                    <li> <p class="lightText">Sports.live</p></li>
-                    <li><h4>INDvWI: India beat the West Indies by 8 runs in the second T20 match</h4></li>
-                    <li> <p class="lightText">Trending with <span>#ViratKohli</span></p></li>
-                  
-                </ul>
-                <img src="./assets/cricket-img.webp" alt="">   
-
-            </div>
-            <br><br>
-            <div id="news">
-                <ul>
-                    <li></li>
-                    <li> <p class="lightText">Sports.live</p></li>
-                    <li><h4>INDvWI: India beat the West Indies by 8 runs in the second T20 match</h4></li>
-                    <li> <p class="lightText">Trending with <span>#ViratKohli</span></p></li>
-                  
-                </ul>
-                <img src="./assets/cricket-img.webp" alt="">   
-
-            </div>
-            <br><br>
-            <div id="news">
-                <ul>
-                    <li></li>
-                    <li> <p class="lightText">Sports.live</p></li>
-                    <li><h4>INDvWI: India beat the West Indies by 8 runs in the second T20 match</h4></li>
-                    <li> <p class="lightText">Trending with <span>#ViratKohli</span></p></li>
-                  
-                </ul>
-                <img src="./assets/cricket-img.webp" alt="">   
-
-            </div>
-            <br><br>
-            <div id="news">
-                <ul>
-                    <li></li>
-                    <li> <p class="lightText">Sports.live</p></li>
-                    <li><h4>INDvWI: India beat the West Indies by 8 runs in the second T20 match</h4></li>
-                    <li> <p class="lightText">Trending with <span>#ViratKohli</span></p></li>
-                  
-                </ul>
-                <img src="./assets/cricket-img.webp" alt="">   
-
+            
             </div>
             <br><br>
             

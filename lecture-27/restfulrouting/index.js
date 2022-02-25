@@ -109,7 +109,6 @@ app.delete('/comments/:commentid',(req,res)=>{
      res.redirect('/comments');
 })
 
-
 app.listen(3000,()=>{
     console.log('Server started at port 3000')  
 })

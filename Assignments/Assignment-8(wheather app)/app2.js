@@ -22,14 +22,14 @@ async function getdata(inputText){
 // console.log("starting to parse the data")
     ///starting to parse the data
 //     const data=await res.json();
-
-//  console.log(data);
+  /// console.log(data);
 //  console.log("Printing parse the data");
 
 .then(res =>{
-    return res.json();
+//     return res.json();
+console.log(res.json())
 
-}).then(displayResult);
+ }).then(displayResult);
 
 
     }

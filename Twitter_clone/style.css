@@ -53,6 +53,7 @@ border-right: 1px solid gray;
 border: none; 
   background-color: rgb(35, 38, 41); 
   color: white; 
+  cursor: pointer;
 
 }
 #navbar li:hover{
@@ -219,17 +220,24 @@ display: flex;
 #newsSection .lightText{
     color:gray;
  }
+ #newsSection #heading{
+     border-bottom: 1px solid gray;
+ }
 #newsSection #news{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
         color: white;
-    background-color: rgb(39, 36, 36);
+    background-color: rgb(3, 3, 3);
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid gray;
 }
 #news img{
     width:130px;
     margin-right:5px;
+    
 }
+
 
 .link{
     color:rgb(13, 163, 233);
@@ -278,4 +286,32 @@ img{
 
 #postscontainer:hover{
     background-color: rgb(35, 38, 41); 
+}
+button:hover{
+    cursor: pointer;
+}
+p:hover{
+    cursor: pointer;
+}
+h1:hover{
+cursor: pointer;
+}
+li:hover{
+    cursor: pointer;
+}
+img:hover{
+    cursor: pointer;
+
+}
+i:hover{
+    cursor: pointer;
+}
+#totalPost:hover{
+    cursor: pointer;
+}
+input:hover{
+    cursor: pointer;
+}
+logo:hover{
+    cursor: pointer;
 }
