@@ -7,8 +7,7 @@ const product=require('../model/product');
 
 router.get('/products',async(req,res)=>{
  const products=await product.find({});
- res.send(products);
-console.log(products);
+res.render('index',{products})
 
 })
 
