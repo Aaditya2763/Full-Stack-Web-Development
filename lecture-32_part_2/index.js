@@ -11,7 +11,7 @@ app.set('view engine','ejs');
 const methodoverride=require("method-override");
 app.use(methodoverride('_method'));
 const mongoose=require('mongoose');
- 
+  
 mongoose.connect('mongodb://localhost:27017/shopping-website')
 .then(()=> console.log("db Seeded"))
 .catch((err) => console.log(err));

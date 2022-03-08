@@ -7,7 +7,7 @@ const router=express.Router();
 router.get('/',(req,res)=>{
     res.send("Home Page")
 })
-
+ 
 router.get('/products',async(req,res) =>{
     const products=await Product.find({});
 
@@ -52,12 +52,12 @@ router.patch("/products/:id",async(req,res)=>{
     const {id}=req.params;
     const {name,img,price,desc}=req.body;
 
-    await Product.findByIdAndUpdate({name,img,price,desc});
-    res.redirect('/products');
+    await Product.findByIdAndUpdate(id,{name,img,price,desc});
+    res.redirect(`/products/${id}`);
 
 })
 
-router.get('/products/:id/delete', async(req,res)=>{
+router.delete('/products/:id', async(req,res)=>{
     const {id}=req.params;
     const product=await Product.findByIdAndDelete(id);
 
