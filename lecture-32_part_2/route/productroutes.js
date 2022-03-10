@@ -2,7 +2,7 @@
 const express=require('express');
 const Product = require('../model/product');
 const router=express.Router();
-
+const Review=require('../model/review');
 
 router.get('/',(req,res)=>{
     res.send("Home Page")
@@ -15,6 +15,8 @@ router.get('/products',async(req,res) =>{
 })
  
 router.get('/products/new',(req,res)=>{
+
+
     res.render('product/new')            
 })
 
@@ -22,6 +24,7 @@ router.post('/products',async(req,res)=>{
     //can't destructure name,price etc due to data format so we have to use urlencoder)
    const {name,price,img,desc}=req.body;
    await Product.create({name,price,img,desc});
+ 
 res.redirect('/products');
 })
 
@@ -62,6 +65,24 @@ router.delete('/products/:id', async(req,res)=>{
     const product=await Product.findByIdAndDelete(id);
 
     res.redirect("/products")
+ 
+})
+
+router.post('/products/:id/review', async(req,res)=>{
+     const {id}=req.params;
+     const {rating , comment}=req.body;
+
+const product=Product.findById(id);
+const review=new Review(rating,comment);
+
+ //Adding review to  const product(in reviews array inside product.js)
+ product.reviews.push(review);
+
+
+ await review.save();
+ await product.save();
+
+ res.redirect(`/products/${id}`)
 
 })
 
