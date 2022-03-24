@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Aaditya2763/Full-Stack-Web-Development/issues"
   },
-  "homepage": "https://github.com/Aaditya2763/Full-Stack-Web-Development#readme"
+  "homepage": "https://github.com/Aaditya2763/Full-Stack-Web-Development#readme",
+  "dependencies": {
+    "connect-mongo": "^4.6.0"
+  }
 }
