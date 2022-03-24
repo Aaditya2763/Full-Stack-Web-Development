@@ -7,7 +7,7 @@
         <img src="<%=product.img %> " class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">
-            <%=product.name %>
+            <%=product.name %> 
           </h5> 
           <p class="card-text">
             <%=product.desc %>
@@ -25,11 +25,11 @@
 
     </div>
 
-    <div class="col-lg-6 ">
+    <div class="col-lg-6 border ">
       <h1 class="display-6 mx-5">Leave Your Review</h1>
         
     <div>
-      <form action="/products/<%=product._id%>/review" method="post">
+      <form action="/products/<%=product._id%>/review" method="POST">
         <fieldset class="starability-basic mx-5">
           <legend class="h6">Rating</legend>
           <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
@@ -47,15 +47,31 @@
        
        
           <label for="rating" class="form-lable mx-5 ">comment</label>
-         <textarea name="" id="" rows="3" class="form-control  mx-5" style="width:320px" ></textarea>
+         <textarea name="comment" id="comment" rows="3" class="form-control  mx-5" style="width:320px" ></textarea>
           
           
       
-        <button type="submit" class="btn btn-primary mx-5" style="margin-top: 10px;">Submit</button>
+        <button type="submit" class="btn btn-primary mx-5 mb-5" style="margin-top: 10px;">Submit</button>
       </form>
     </div>
       
-
+    <div class="mb-3 mx-5 ">
+      <!-- reverse()will show the rewies according to time -->
+      <% for(let review of product.reviews.reverse()){ %>
+          <div class="card mb-2">
+              <div class="card-body">
+                  <p class="starability-result" data-rating="<%=review.rating%>" >
+                    
+                  </p>
+                  <p>  Rated: <%=review.rating%> stars</p>
+                 
+                  <p><%=review.comment%></p>
+                  <button class="btn btn-sm btn-danger">Delete</button>
+              </div>
+            
+            </div>
+      <% } %>  
+  </div>
       
     </div>
-  </div>
+  

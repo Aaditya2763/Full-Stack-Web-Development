@@ -25,7 +25,7 @@ app.set("views",path.join(__dirname,"views"));
 app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(router);
-app.use(methodoverride);
+app.use(methodoverride(_method));
 app.use(flash)
 
 
@@ -51,10 +51,10 @@ app.use((req, res, next) => {
     res.locals.currentUser = req.user;
    
     next();
-  });
+  }); 
 
-
-const user = require('./model/user');
+      
+const User = require('./model/user');
 const SeedUser=require('./seed');
 
 

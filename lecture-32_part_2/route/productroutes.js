@@ -31,7 +31,7 @@ res.redirect('/products');
 router.get('/products/:id', async (req, res) => {
     const { id } = req.params;
 
-    const product= await Product.findById(id);
+    const product= await Product.findById(id).populate('reviews');
 
     
    res.render('product/show', {product});
@@ -72,8 +72,8 @@ router.post('/products/:id/review', async(req,res)=>{
      const {id}=req.params;
      const {rating , comment}=req.body;
 
-const product=Product.findById(id);
-const review=new Review(rating,comment);
+const product= await Product.findById(id);
+const review=new Review({rating ,comment});
 
  //Adding review to  const product(in reviews array inside product.js)
  product.reviews.push(review);

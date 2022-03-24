@@ -2,7 +2,7 @@
 
 <div class="border p-3 mx-auto w-50">
     <h1>Edit</h1>
-    <form action="/products/<%=user._id%>?_method=PATCH"  method="post" class="form-validate" validate>
+    <form action="/products/<%=user._id%>?_method=PATCH"  method="POST" class="form-validate" validate>
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" name="name" id="name" value="<%=user.name%>"  required>
